@@ -17,7 +17,8 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-  //connection: 'jemaMongodbServer',
+  connection: 'local_metricsMongoDB' //,
+  // connection: 'remote_jemaMongoDB' //,
 
   /***************************************************************************
   *                                                                          *
