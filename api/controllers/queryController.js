@@ -1,20 +1,10 @@
+/**
+ * QueryController
+ *
+ * @description :: Server-side logic for managing Queries
+ * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
+ */
+
 module.exports = {
- attributes: {
-    Question: {
-      type: 'string',
-      required: true
-    },
 
-    Value: {
-      type: 'string'
-    },
-
-    count: {
-      type: 'string'
-    },
-
-    Date: {
-      type: 'string'
-    }
-  }
 };

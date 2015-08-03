@@ -41,10 +41,12 @@ module.exports.connections = {
   * jema is remote server                                                    *
   *                                                                          *
   ***************************************************************************/
+
   local_metricsMongoDB: {
     adapter: 'sails-mongo',
     host: 'localhost',
-    port: 45321,
+    //port: 45321,
+    port: 27017,
     // user: 'username',
     // password: 'password',
     database: 'metrics'

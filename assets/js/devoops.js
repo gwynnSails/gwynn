@@ -24,46 +24,12 @@
 
 
 "use strict";
-/*-------------------------------------------
-	Dynamically load plugin scripts
----------------------------------------------*/
-//
-// Dynamically load Fullcalendar Plugin Script
-// homepage: http://arshaw.com/fullcalendar
-// require moment.js
-//
-function LoadCalendarScript(callback){
-	function LoadFullCalendarScript(){
-		if(!$.fn.fullCalendar){
-			$.getScript('plugins/fullcalendar/fullcalendar.js', callback);
-		}
-		else {
-			if (callback && typeof(callback) === "function") {
-				callback();
-			}
-		}
-	}
-	if (!$.fn.moment){
-		$.getScript('plugins/moment/moment.min.js', LoadFullCalendarScript);
-	}
-	else {
-		LoadFullCalendarScript();
-	}
+
+// this is a test injection for testing stacking in sails
+function loaded () {
+	document.getElementById("writerTester").innerHTML = currentDate_b;
 }
-//
-// Dynamically load  OpenStreetMap Plugin
-// homepage: http://openlayers.org
-//
-function LoadOpenLayersScript(callback){
-	if (!$.fn.OpenLayers){
-		$.getScript('http://www.openlayers.org/api/OpenLayers.js', callback);
-	}
-	else {
-		if (callback && typeof(callback) === "function") {
-			callback();
-		}
-	}
-}
+
 //
 // Dynamically load  Leaflet Plugin
 // homepage: http://leafletjs.com

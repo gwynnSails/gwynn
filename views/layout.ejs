@@ -27,9 +27,16 @@
         <script src="/shiv/respond.min.js"></script>
     <![endif]-->
 
+    <!-- DATES -->
+    <script>
+    var currentDate_b = (new Date()).toISOString().slice(0,10).replace(/-/g,"");
+    //var currentData_b = "test";
+    </script>
+    <!-- DATES END -->
+
   </head>
 
-  <body>
+  <body onload="loaded()">
     <%- body %>
 
     <!--SCRIPTS-->

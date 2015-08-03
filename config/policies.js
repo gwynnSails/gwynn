@@ -48,4 +48,13 @@ module.exports.policies = {
 		// before letting any users feed our rabbits
 		// feed : ['isNiceToAnimals', 'hasRabbitFood']
 	// }
+
+  Query:{
+    'create': false,
+    'find': true,
+    'findAll': false,
+    'update': false,
+    'destroy': false
+  }
+
 };
