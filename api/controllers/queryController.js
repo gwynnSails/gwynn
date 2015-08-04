@@ -7,4 +7,10 @@
 
 module.exports = {
 
+  index: function (req, res) {
+    return res.json({
+      todo: 'this page should be used with the find function'
+    });
+  }
+
 };

@@ -30,13 +30,14 @@
     <!-- DATES -->
     <script>
     var currentDate_b = (new Date()).toISOString().slice(0,10).replace(/-/g,"");
-    //var currentData_b = "test";
+    var cursor = db.query.findOne({question : 'total'} , {count : 1}).limit(1);
+    var myDate = cursor.next();
     </script>
     <!-- DATES END -->
 
   </head>
 
-  <body onload="loaded()">
+  <body onload="dashboardLoaded()">
     <%- body %>
 
     <!--SCRIPTS-->
@@ -49,6 +50,7 @@
     <script src="/js/d3/d3.js"></script>
     <script src="/js/d3/d3.min.js"></script>
     <script src="/js/jquery.fancybox.js"></script>
+    <script src="/js/qMetrics.js"></script>
     <script src="/js/select2.min.js"></script>
     <script src="/js/xcharts/xcharts.min.js"></script>
     <!--SCRIPTS END-->
