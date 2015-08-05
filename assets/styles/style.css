@@ -1894,14 +1894,14 @@ td.beauty-hover {
 #ow-stat .row {
   margin: 0;
 }
-#dashboard-clients .one-list-message {
+#dashboard-stats .one-list-message {
   background:none;
   padding:10px 15px;
 }
-#dashboard-clients .one-list-message:last-child {
+#dashboard-stats .one-list-message:last-child {
   border-bottom: 0;
 }
-#dashboard-clients .one-list-message .message-date {
+#dashboard-stats .one-list-message .message-date {
   position: relative;
   width: auto;
   right: auto;
