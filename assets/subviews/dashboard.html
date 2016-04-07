@@ -33,7 +33,7 @@
 				<div class="sparkline-dashboard" id="sparkline-1"></div>
 				<div class="sparkline-dashboard-info">
 					<div class="monthlyUniqueUsers"></div>
-					24
+          <span style="color:#404040" id="unique_users"></span>
 					<span class="txt-primary">Unique Users</span>
 				</div>
 			</div>
@@ -41,7 +41,7 @@
 				<div class="sparkline-dashboard" id="sparkline-2"></div>
 				<div class="sparkline-dashboard-info">
 					<div class="monthlyUniqueModels"></div>
-					104
+					<span style="color:#404040" id="unique_models"></span>
 					<span class="txt-info">Unique Models</span>
 				</div>
 			</div>
@@ -49,7 +49,7 @@
 				<div class="sparkline-dashboard" id="sparkline-3"></div>
 				<div class="sparkline-dashboard-info">
 					<div class="monthlyUniqueModels"></div>
-					719
+          <span style="color:#404040" id="total_model_runs"></span>
 					<span>Total Model Runs</span>
 				</div>
 			</div>
@@ -232,5 +232,6 @@ $(document).ready(function() {
 	$("#ticker-table").beautyHover();
 	// Run script for stock block
 	CreateStockPage();
+  qMetricsDashboard()
 });
 </script>
