@@ -14,8 +14,14 @@ module.exports = {
 
     Query.find({Date: query_date}).exec(function (err, return_record) {
 
-      return res.json(query_date);
+      if (err){
+        return res.json(err);
+      }
 
+      if (return_record == ""){
+        return res.json("no data from server");
+      }
+      
       return res.view("qMetrics", {
         qRecord: return_record
       });
