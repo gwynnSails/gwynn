@@ -1,12 +1,12 @@
 
-var monthly_uniqueUsers = JSON.stringify(modpop[0]["month"]["uniqueUsers"]);
-var monthly_uniqueModels = JSON.stringify(modpop[0]["month"]["uniqueModels"]);
-var monthly_totalModelRuns = JSON.stringify(modpop[0]["month"]["totalModelRuns"]);
-var monthly_totalRecords = JSON.stringify(modpop[0]["month"]["totalRecords"]);
-var monthly_totalOrgs = JSON.stringify(modpop[0]["month"]["totalOrgs"]);
-var monthly_uniqueUsers = JSON.stringify(modpop[0]["month"]["uniqueUsers"]);
-var monthly_uniqueUsers = JSON.stringify(modpop[0]["month"]["uniqueUsers"]);
-var monthly_uniqueUsers = JSON.stringify(modpop[0]["month"]["uniqueUsers"]);
+var monthly_uniqueUsers = JSON.stringify(modpop["month"]["uniqueUsers"]);
+var monthly_uniqueModels = JSON.stringify(modpop["month"]["uniqueModels"]);
+var monthly_totalModelRuns = JSON.stringify(modpop["month"]["totalModelRuns"]);
+var monthly_totalRecords = JSON.stringify(modpop["month"]["totalRecords"]);
+var monthly_totalOrgs = JSON.stringify(modpop["month"]["totalOrgs"]);
+var monthly_uniqueUsers = JSON.stringify(modpop["month"]["uniqueUsers"]);
+var monthly_uniqueUsers = JSON.stringify(modpop["month"]["uniqueUsers"]);
+var monthly_uniqueUsers = JSON.stringify(modpop["month"]["uniqueUsers"]);
 
 function qMetricsDashboard() {
   document.getElementById("unique_users").innerHTML = monthly_uniqueUsers;

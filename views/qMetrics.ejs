@@ -2,8 +2,7 @@
 <!-- starting qmetrics.ejs -->
 
 <script>
-  var modpop = <%- qRecord%>;
-  alert(JSON.stringify(modpop));
+  var modpop = <%- JSON.stringify(qRecord[0]) %>;
 </script>
 
 <script src="/js/qMetrics.js"></script>
