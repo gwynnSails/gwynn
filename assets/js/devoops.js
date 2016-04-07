@@ -24,15 +24,6 @@
 
 
 "use strict";
-
-// this is a test injection for testing stacking in sails
-function dashboardLoaded () {
-	document.getElementById("writerTester").innerHTML = currentDate_b;
-	document.getElementById("queryResults").innerHTML = cursor;
-}
-
-
-
 //
 // Dynamically load  Leaflet Plugin
 // homepage: http://leafletjs.com

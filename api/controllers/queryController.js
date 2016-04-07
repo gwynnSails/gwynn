@@ -8,9 +8,17 @@
 module.exports = {
 
   index: function (req, res) {
-    return res.json({
-      todo: 'this page should be used with the find function'
-    });
-  }
 
+    var today = new Date();
+    var query_date = today.toISOString().slice(0,10);
+
+    Query.find({Date: query_date}).exec(function (err, return_record) {
+
+      return res.json(query_date);
+
+      return res.view("qMetrics", {
+        qRecord: return_record
+      });
+    });
+    }
 };
