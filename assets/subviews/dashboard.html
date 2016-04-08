@@ -32,7 +32,6 @@
 			<div class="col-xs-4">
 				<div class="sparkline-dashboard" id="sparkline-1"></div>
 				<div class="sparkline-dashboard-info">
-					<div class="monthlyUniqueUsers"></div>
           <span style="color:#404040" id="unique_users"></span>
 					<span class="txt-primary">Unique Users</span>
 				</div>
@@ -40,7 +39,6 @@
 			<div class="col-xs-4">
 				<div class="sparkline-dashboard" id="sparkline-2"></div>
 				<div class="sparkline-dashboard-info">
-					<div class="monthlyUniqueModels"></div>
 					<span style="color:#404040" id="unique_models"></span>
 					<span class="txt-info">Unique Models</span>
 				</div>
@@ -48,7 +46,6 @@
 			<div class="col-xs-4">
 				<div class="sparkline-dashboard" id="sparkline-3"></div>
 				<div class="sparkline-dashboard-info">
-					<div class="monthlyUniqueModels"></div>
           <span style="color:#404040" id="total_model_runs"></span>
 					<span>Total Model Runs</span>
 				</div>
@@ -62,8 +59,8 @@
 	<div id="dashboard_links" class="col-xs-12 col-sm-2 pull-right">
 		<ul class="nav nav-pills nav-stacked">
 			<li class="active"><a href="#" class="tab-link" id="overview">Overview</a></li>
-			<li><a href="#" class="tab-link" id="clients">Top Orgs</a></li>
-			<li><a href="#" class="tab-link" id="graph">Top Models</a></li>
+			<li><a href="#" class="tab-link" id="clients">Organizations</a></li>
+			<li><a href="#" class="tab-link" id="graph">Components</a></li>
 
 			<li><a href="#" class="tab-link" id="servers">Misc Data</a></li>
 
@@ -73,13 +70,10 @@
 		<!--Start Dashboard Tab 1-->
 		<div id="dashboard-overview" class="row" style="visibility: visible; position: relative;">
 			<div id="ow-marketplace" class="col-sm-12 col-md-6">
-
-				<h4 class="page-header">Overview</h4>
+				<h4 class="page-header">Overview and Top 10 Models</h4>
 				<table id="ticker-table" class="table m-table table-bordered table-hover table-heading">
-					<thead>
-					</thead>
-					<tbody>
-					</tbody>
+					<thead></thead>
+					<tbody></tbody>
 				</table>
 			</div>
 			<div class="col-xs-12 col-md-6">
@@ -100,16 +94,16 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<div class="row">
-									<div class="col-xs-6">Total commits<b>1245634</b></div>
-									<div class="col-xs-6">Release count<b>227</b></div>
+									<div class="col-xs-6">Total Records<b>11530311</b></div>
+									<div class="col-xs-6">Last Summary<b>04-09-2016</b></div>
 								</div>
 								<div class="row">
-									<div class="col-xs-6">Tests passed<b>5222345</b></div>
-									<div class="col-xs-6">Tickets solved<b>324322</b></div>
+									<div class="col-xs-6">Unique Users<b>614</b></div>
+									<div class="col-xs-6">Unique Models<b>854</b></div>
 								</div>
 								<div class="row">
-									<div class="col-xs-6">Active clients<b>52145</b></div>
-									<div class="col-xs-6">Support team<b>288</b></div>
+									<div class="col-xs-6">Total Model Runs<b>5061</b></div>
+									<div class="col-xs-6">Unique Components<b>1231</b></div>
 								</div>
 							</div>
 						</div>
@@ -122,12 +116,12 @@
 		<div id="dashboard-clients" class="row" style="visibility: hidden; position: absolute;">
 
 			<div class="col-xs-12"><br>
-				<h4 class="page-header">Org Statistics (not yet dynamic)</h4>
+				<h4 class="page-header">Org Statistics</h4>
 			</div>
 
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-users"></i></div>
-				<div class="col-xs-2"><b>Country</b></div>
+				<div class="col-xs-2"><b>Organization</b></div>
 				<div class="col-xs-2">Users</div>
 				<div class="col-xs-2">Model Runs</div>
 				<div class="col-xs-2">Unique Models</div>
@@ -136,75 +130,367 @@
 			</div>
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-user"></i></div>
-				<div class="col-xs-2"><b>USA</b></div>
-				<div class="col-xs-2">109455</div>
-				<div class="col-xs-2">54322344</div>
-				<div class="col-xs-2"></i> 354563</div>
+				<div class="col-xs-2"><b>Consumer Products</b></div>
+				<div class="col-xs-2">302</div>
+				<div class="col-xs-2">1101</div>
+				<div class="col-xs-2"></i> 200</div>
 				<div class="col-xs-1"><span class="bar"></span></div>
-				<div class="col-xs-2 message-date">12/31/13</div>
+				<div class="col-xs-2 message-date">4/8/2016</div>
 			</div>
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-user"></i></div>
-				<div class="col-xs-2"><b>U.K.</b></div>
-				<div class="col-xs-2">86549</div>
-				<div class="col-xs-2">43242344</div>
-				<div class="col-xs-2"></i> 265563</div>
+				<div class="col-xs-2"><b>Retail</b></div>
+				<div class="col-xs-2">1781</div>
+				<div class="col-xs-2">2778</div>
+				<div class="col-xs-2"></i> 321</div>
 				<div class="col-xs-1"><span class="bar"></span></div>
-				<div class="col-xs-2 message-date">12/25/13</div>
+				<div class="col-xs-2 message-date">4/8/2016</div>
 			</div>
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-user"></i></div>
-				<div class="col-xs-2"><b>FRANCE</b></div>
-				<div class="col-xs-2">79399</div>
-				<div class="col-xs-2">45376844</div>
-				<div class="col-xs-2"></i> 309456</div>
+				<div class="col-xs-2"><b>Logistics</b></div>
+				<div class="col-xs-2">47</div>
+				<div class="col-xs-2">130</div>
+				<div class="col-xs-2"></i> 5</div>
 				<div class="col-xs-1"><span class="bar"></span></div>
-				<div class="col-xs-2 message-date">12/30/13</div>
+				<div class="col-xs-2 message-date">4/8/2016</div>
 			</div>
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-user"></i></div>
-				<div class="col-xs-2"><b>GERMANY</b></div>
-				<div class="col-xs-2">94567</div>
-				<div class="col-xs-2">35322344</div>
-				<div class="col-xs-2"></i> 301040</div>
+				<div class="col-xs-2"><b>Fabrication</b></div>
+				<div class="col-xs-2">128</div>
+				<div class="col-xs-2">566</div>
+				<div class="col-xs-2"></i> 17</div>
 				<div class="col-xs-1"><span class="bar"></span></div>
-				<div class="col-xs-2 message-date">12/26/13</div>
+				<div class="col-xs-2 message-date">4/8/2016</div>
 			</div>
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-user"></i></div>
-				<div class="col-xs-2"><b>CANADA</b></div>
-				<div class="col-xs-2">89525</div>
-				<div class="col-xs-2">1342344</div>
-				<div class="col-xs-2"></i> 298764</div>
+				<div class="col-xs-2"><b>Construction</b></div>
+				<div class="col-xs-2">17</div>
+				<div class="col-xs-2">12</div>
+				<div class="col-xs-2"></i> 1</div>
 				<div class="col-xs-1"><span class="bar"></span></div>
-				<div class="col-xs-2 message-date">12/30/13</div>
+				<div class="col-xs-2 message-date">4/8/2016</div>
 			</div>
 			<div class="row one-list-message">
 				<div class="col-xs-1"><i class="fa fa-user"></i></div>
-				<div class="col-xs-2"><b>CHINA</b></div>
-				<div class="col-xs-2">120865</div>
-				<div class="col-xs-2">43522344</div>
-				<div class="col-xs-2"></i> 776563</div>
+				<div class="col-xs-2"><b>Food</b></div>
+				<div class="col-xs-2">13</div>
+				<div class="col-xs-2">131</div>
+				<div class="col-xs-2"></i> 3</div>
 				<div class="col-xs-1"><span class="bar"></span></div>
-				<div class="col-xs-2 message-date">12/29/13</div>
+				<div class="col-xs-2 message-date">4/8/2016</div>
 			</div>
+
+      <div class="row one-list-message">
+        <div class="col-xs-1"><i class="fa fa-user"></i></div>
+        <div class="col-xs-2"><b>Agriculture</b></div>
+        <div class="col-xs-2">8</div>
+        <div class="col-xs-2">200</div>
+        <div class="col-xs-2"></i> 11</div>
+        <div class="col-xs-1"><span class="bar"></span></div>
+        <div class="col-xs-2 message-date">4/8/2016</div>
+      </div>
+
+      <div class="row one-list-message">
+        <div class="col-xs-1"><i class="fa fa-user"></i></div>
+        <div class="col-xs-2"><b>Energy</b></div>
+        <div class="col-xs-2">4</div>
+        <div class="col-xs-2">103</div>
+        <div class="col-xs-2"></i> 49</div>
+        <div class="col-xs-1"><span class="bar"></span></div>
+        <div class="col-xs-2 message-date">4/8/2016</div>
+      </div>
+
+      <div class="row one-list-message">
+        <div class="col-xs-1"><i class="fa fa-user"></i></div>
+        <div class="col-xs-2"><b>Forestry</b></div>
+        <div class="col-xs-2">2</div>
+        <div class="col-xs-2">14</div>
+        <div class="col-xs-2"></i> 1</div>
+        <div class="col-xs-1"><span class="bar"></span></div>
+        <div class="col-xs-2 message-date">4/8/2016</div>
+      </div>
+
+
 		</div>
 		<!--End Dashboard Tab 2-->
 		<!--Start Dashboard Tab 3-->
-		<div id="dashboard-graph" class="row" style="width:100%; visibility: hidden; position: absolute;" >
-			<div class="col-xs-12"><br>
-				<h4 class="page-header">Org Statistics</h4>
-				<div id="stat-graph" style="height: 300px;"></div>
-			</div>
-		</div>
+    <div id="dashboard-graph" class="row" style="width:100%; visibility: hidden; position: absolute;" >
+      <div class="col-xs-12">
+        <br>
+        <h4 class="page-header">Component Data</h4>
+        <div id="stat-graph" style="height: 300px;">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <div>
+                  <div id="xchart-1" style="height: 0px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <div>
+                <div class="box-content">
+                  <div id="xchart-2" style="height: 0px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="box">
+                <div class="box-header">
+                  <div class="box-name">
+                    <i class="fa fa-search"></i>
+                    <span>Unique Components Over Time</span>
+                  </div>
+                  <div class="box-icons">
+                    <a class="collapse-link">
+                      <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a class="expand-link">
+                      <i class="fa fa-expand"></i>
+                    </a>
+                    <a class="close-link">
+                      <i class="fa fa-times"></i>
+                    </a>
+                  </div>
+                  <div class="no-move"></div>
+                </div>
+                <div class="box-content">
+                  <div id="xchart-3" style="height: 200px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            // Draw all test xCharts
+            function DrawAllxCharts(){
+              xGraph1();
+              xGraph2();
+              xGraph3();
+            }
+            $(document).ready(function() {
+              // Load required scripts and callback to draw
+              LoadXChartScript(DrawAllxCharts);
+              // Required for correctly resize charts, when boxes expand
+              var graphxChartsResize;
+              $(".box").resize(function(event){
+                event.preventDefault();
+                clearTimeout(graphxChartsResize);
+                graphxChartsResize = setTimeout(DrawAllxCharts, 500);
+              });
+              WinMove();
+            });
+          </script>
+
+
+
+        </div>
+      </div>
+    </div>
 		<!--End Dashboard Tab 3-->
 		<!--Start Dashboard Tab 4-->
-		<div id="dashboard-servers" class="row" style="visibility: visible; position: relative;">
-			<div class="col-sm-12 col-md-6"><br>
-				<h4 class="page-header">Overview</h4>
-				<div id="stat-graph" style="height: 300px;"></div>
-			</div>
-		</div>
+    <div id="dashboard-servers" class="row" style="visibility: hidden; position: absolute;">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-bar-chart-o"></i>
+                <span>Organizations Over Time</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <div id="google-chart-1" style="min-height: 200px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-circle"></i>
+                <span>User-Model Diversity</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <div id="google-chart-2" style="min-height: 200px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-map-marker"></i>
+                <span>Correlation Chart JEMA Users</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <div id="google-chart-4" style="min-height: 800px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-bullseye"></i>
+                <span>Fake to show placement/sizing options</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <div id="google-chart-7" style="min-height: 200px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-signal"></i>
+                <span>Fake to show closing options</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <div id="google-chart-8" style="min-height: 200px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-ellipsis-v"></i>
+                <span>Fake Scatter Plot</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <div id="google-chart-3" style="min-height: 200px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="box">
+            <div class="box-header">
+              <div class="box-name">
+                <i class="fa fa-dot-circle-o"></i>
+                <span>Other Chart</span>
+              </div>
+              <div class="box-icons">
+                <a class="collapse-link">
+                  <i class="fa fa-chevron-up"></i>
+                </a>
+                <a class="expand-link">
+                  <i class="fa fa-expand"></i>
+                </a>
+                <a class="close-link">
+                  <i class="fa fa-times"></i>
+                </a>
+              </div>
+              <div class="no-move"></div>
+            </div>
+            <div class="box-content">
+              <!--<div id="google-chart-5" style="min-height: 400px;"></div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script type="text/javascript">
+        $(document).ready(function() {
+          // Load Google Chart API and callback to draw test graphs
+          $.getScript('http://www.google.com/jsapi?autoload={%22modules%22%3A[{%22name%22%3A%22visualization%22%2C%22version%22%3A%221%22%2C%22packages%22%3A[%22corechart%22%2C%22geochart%22]%2C%22callback%22%3A%22DrawAllCharts%22}]}');
+          // This need for correct resize charts, when box open or drag
+          var graphxChartsResize;
+          $(".box").resize(function(event){
+            event.preventDefault();
+            clearTimeout(graphxChartsResize);
+            graphxChartsResize = setTimeout(DrawAllCharts, 500);
+          });
+          // Add Drag-n-Drop action for .box
+          WinMove();
+        });
+      </script>
+    </div>
 		<!--End Dashboard Tab 4-->
 
 	</div>
@@ -233,5 +519,6 @@ $(document).ready(function() {
 	// Run script for stock block
 	CreateStockPage();
   qMetricsDashboard()
+  modelChart()
 });
 </script>
