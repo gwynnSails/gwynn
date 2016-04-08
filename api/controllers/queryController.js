@@ -19,9 +19,9 @@ module.exports = {
       }
 
       if (return_record == ""){
-        return res.json("no data from server");
+        return res.json("no data from server for date: " + query_date);
       }
-      
+
       return res.view("qMetrics", {
         qRecord: return_record
       });
